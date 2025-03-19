@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Gyanmatrix_ExportBlog Module Registration
+*
+* @category    GyanMatrix
+* @package     Gyanmatrix_ExportBlog
+* @author      GyanMatrix Software Private Limited
+*
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<!-- <add id="Gyanmatrix_ExportBlog::ExportBlog" title="GyanMatrix" module="Gyanmatrix_ExportBlog" sortOrder="10"/> -->
+    	<!-- <add id="Gyanmatrix_ExportBlog::create" title="Export Blog Manager" module="Gyanmatrix_ExportBlog" sortOrder="20" action="exportblog/grid/index" resource="Gyanmatrix_ExportBlog::create"/> -->
+        <add id="Gyanmatrix_ExportBlog::manager" title="Grid Manager" module="Gyanmatrix_ExportBlog" sortOrder="10" resource="Gyanmatrix_ExportBlog::manager"/>
+        <add id="Gyanmatrix_ExportBlog::add_row" title="Grid Manager" module="Gyanmatrix_ExportBlog" sortOrder="20" parent="Gyanmatrix_ExportBlog::manager" action="exportblog/grid/index" resource="Gyanmatrix_ExportBlog::add_row"/>
+    </menu>
+</config>

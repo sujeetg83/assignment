@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--
+/**
+* Gyanmatrix_ExportBlog Module Registration
+*
+* @category    GyanMatrix
+* @package     Gyanmatrix_ExportBlog
+* @author      GyanMatrix Software Private Limited
+*
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Gyanmatrix_ExportBlog" setup_version="2.0.0">
+        <sequence>
+            <module name="Magento_Backend"/>
+            <module name="Magento_Ui"/>
+        </sequence>
+    </module>
+</config>

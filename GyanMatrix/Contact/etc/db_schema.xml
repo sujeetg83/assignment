@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="contact_us" resource="default" comment="My table" charset="utf8">
+        <column name="id" xsi:type="int" padding="5" unsigned="true" identity="true" nullable="false"></column>
+        <column name="name" xsi:type="varchar" nullable="false" length="124"></column>
+        <column name="email" xsi:type="varchar" nullable="false" length="255" comment="Email"/>
+        <column name="telephone" xsi:type="varchar" nullable="true" length="50" comment="Telephone"/>
+        <column name="comment" xsi:type="text" nullable="false" comment="Message"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

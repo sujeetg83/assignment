@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Gyanmatrix_ExportBlog Module Registration
+*
+* @category    GyanMatrix
+* @package     Gyanmatrix_ExportBlog
+* @author      GyanMatrix Software Private Limited
+*
+*/
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="exportblog_grid_listing"/>
+        </referenceContainer>
+    </body>
+</page>

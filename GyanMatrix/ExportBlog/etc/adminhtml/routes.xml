@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Gyanmatrix_ExportBlog Module Registration
+*
+* @category    GyanMatrix
+* @package     Gyanmatrix_ExportBlog
+* @author      GyanMatrix Software Private Limited
+*
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="exportblog" frontName="exportblog">
+            <module name="Gyanmatrix_ExportBlog" before="Magento_Adminhtml"/> 
+        </route> 
+    </router>
+</config>    

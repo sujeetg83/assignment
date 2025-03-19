@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_invoice_save_after">
+        <observer name="add_comment_on_invoice" instance="GyanMatrix\OrderComment\Observer\AddCommentOnInvoice" />
+    </event>
+    <event name="sales_order_shipment_save_after">
+        <observer name="add_comment_on_shipment" instance="GyanMatrix\OrderComment\Observer\AddCommentOnShipment" />
+    </event>
+    <event name="sales_order_save_after">
+        <observer name="add_comment_on_cancel" instance="GyanMatrix\OrderComment\Observer\AddCommentOnCancel" />
+    </event>
+    <event name="sales_order_creditmemo_save_after">
+        <observer name="add_comment_on_creditmemo" instance="GyanMatrix\OrderComment\Observer\AddCommentOnCreditMemo" />
+    </event>
+</config>

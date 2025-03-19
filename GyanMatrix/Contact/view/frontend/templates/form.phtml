@@ -1,0 +1,18 @@
+<div data-bind="scope: 'contactForm'">
+    <form data-bind="submit: saveForm" action="" method="post">
+        <input type="hidden" name="form_key" value="<?= $block->getFormKey() ?>" />
+        <label for="name">Name:</label>
+        <input type="text" name="name" data-bind="value: name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" data-bind="value: email" required />
+
+        <label for="telephone">Telephone:</label>
+        <input type="text" name="telephone" data-bind="value: telephone" required />
+
+        <label for="comment">Message:</label>
+        <textarea name="comment" data-bind="value: comment" required></textarea>
+
+        <button type="submit" data-bind="text: $t('Submit')">Submit</button>
+    </form>
+</div>
